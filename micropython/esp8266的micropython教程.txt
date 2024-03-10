@@ -1,0 +1,11 @@
+http://micropython.com.cn/en/latet/esp8266/tutorial/index.html
+
+命令行上传文件工具安装
+pip install adafruit-ampy -i https://pypi.tuna.tsinghua.edu.cn/simple
+安装完成后，可以使用 ampy --help 来查看可用命令。下面我们先来查看一下当前开发板上的文件：
+
+ampy.exe -p COM3 ls
+>
+/boot.py
+
+ampy.exe -p COM3 put main.py

@@ -1,0 +1,19 @@
+固件烧写方法:
+
+请下载esp8266官方的烧写工具esptool,可以下边链接下载
+
+https://github.com/espressif/esptool
+
+esptool工具可以使用python的pip安装,安装方法如下(下边是使用国内清华的源来安装):
+
+pip install esptool -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+安装好工具后使用命令行烧写:
+
+esptool.py.exe --chip esp8266 --port com6 --baud 115200 write_flash --flash_size=detect 0 esp8266-espnow-g20-v1.19.1-6-g44f65965b-GENERIC_1M.bin
+
+注意,com3是你电脑上板子的串口号,实际串口以你电脑为准
+
+
+
+

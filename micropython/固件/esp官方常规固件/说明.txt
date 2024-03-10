@@ -1,0 +1,39 @@
+方法一：
+1)  安装好python,保证python的环境变量已经正确设置
+2）双击micropython.bat
+
+方法二:
+方法一固写失败时可以使用的手动烧写方法
+
+请下载esp8266官方的烧写工具esptool,可以下边链接下载
+
+https://github.com/espressif/esptool
+
+esptool工具可以使用python的pip安装,安装方法如下(下边是使用国内清华的源来安装):
+
+pip install esptool -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+安装好工具后使用命令行烧写:
+
+esptool.exe --chip esp8266 --port com6 --baud 115200 write_flash --flash_size=detect 0 esp8266-1m-20220117-v1.18.bin
+
+注意,com3是你电脑上板子的串口号,实际串口以你电脑为准
+
+固件烧写好之后，安装ampy.exe上传py文件的命令行工具
+pip install adafruit-ampy -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+然后使用下边命令上传对应文件（com6是你的机器上硬件实际对应的串口端口号）：
+ampy.exe -p com6 put __download.py
+ampy.exe -p com6 put __upload.py
+ampy.exe -p COM6 put boot.py
+ampy.exe -p COM6 put main.py
+ampy.exe -p COM6 put touchDriver.py
+ampy.exe -p COM6 put webrepl_cfg.py
+
+使用下边命令可以查看硬件已经上传的文件：
+ampy.exe -p COM6 ls
+
+重启硬件命令：
+esptool.exe run
+
+

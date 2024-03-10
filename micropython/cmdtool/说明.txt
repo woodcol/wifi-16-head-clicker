@@ -1,0 +1,8 @@
+这里放的是一些命令行下的自动烧写固件的工具,所对应的路径是在我电脑上的路径,大家要使用的话需要修改一下bat文件中对应的路径
+在使用前需要先用pip安装esptool和adafruit-ampy这两个工具.其中esptool是esp8266上传bin固件用的,ampy是micropython固件下通过串口上传py文件的工具
+esptool的安装方法:
+pip install esptool -i https://pypi.tuna.tsinghua.edu.cn/simple
+ampy工具安装方法:
+pip install adafruit-ampy -i https://pypi.tuna.tsinghua.edu.cn/simple
+
+ampy工具使用方法参考:https://zhuanlan.zhihu.com/p/366411699

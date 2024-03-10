@@ -1,0 +1,11 @@
+#!/bin/bash
+export PATH=/usr/local/bin/:/usr/bin:/bin:$PATH
+CUR_PATH=`pwd`
+basepath=$(cd `dirname $0`; pwd)
+echo $CUR_PATH
+echo $basepath
+cd $basepath
+ESPTOOL=/Library/Frameworks/Python.framework/Versions/3.9/bin/esptool.py
+$ESPTOOL erase_flash 
+sleep 1
+$ESPTOOL --chip esp8266 --baud 115200 write_flash --flash_size=detect 0 esp8266-espnow-g20-v1.19.1-6-g44f65965b-GENERIC_1M.bin

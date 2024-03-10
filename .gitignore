@@ -1,0 +1,11 @@
+# Prerequisites
+*.pyc
+
+python-3.8.10.exe
+python-3.10.5-amd64.exe
+micropython.zip
+python-3.8.10-amd64.exe
+python3-8.zip
+SourceTreeSetup-3.4.6.exe.zip
+micropython/tool.zip
+上位机示例程序/通过电脑定时点击程序多头版.zip
