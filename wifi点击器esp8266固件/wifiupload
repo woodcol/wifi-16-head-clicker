@@ -1,0 +1,12 @@
+#!/bin/bash
+export PATH=/usr/local/bin/:$PATH
+CUR_PATH=`pwd`
+basepath=$(cd `dirname $0`; pwd)
+echo $CUR_PATH
+echo $basepath
+
+cd $basepath
+
+
+esptool.py -b 115200 erase_flash
+esptool.py --chip esp8266 -b 115200 --after soft_reset write_flash 0x00000 wifiTouch_20220707.ino.bin
