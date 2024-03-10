@@ -1,0 +1,11 @@
+配网工具使用esp8266官方的配网工具,有微信和手机app两种配网方式,请选择适合自已的方式.
+微信配网,在微信中搜索”安信可科技”公众号,可以看到右下角有配网二字
+app配网,请在官网下载配网工具:
+官网下载页面:
+https://www.espressif.com/zh-hans/products/software/esp-touch/resources
+页面最下边可以看到苹果ios手机和安卓apk下载地址.
+ios app从苹果appstore下载:
+ios下载地址:
+https://apps.apple.com/cn/app/espressif-esptouch/id1071176700
+安卓apk安装包下载地址:
+https://github-production-release-asset-2e65be.s3.amazonaws.com/34372655/c06ce080-7b37-11ea-8d9e-c51094b4602f?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAIWNJYAX4CSVEH53A%2F20201104%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20201104T061344Z&X-Amz-Expires=300&X-Amz-Signature=6f672a44d1069eaf5d03e96156cf1ecf27b6957c9e760a3c1f877b2cb19567fe&X-Amz-SignedHeaders=host&actor_id=9217123&key_id=0&repo_id=34372655&response-content-disposition=attachment%3B%20filename%3Desptouch.apk&response-content-type=application%2Fvnd.android.package-archive
