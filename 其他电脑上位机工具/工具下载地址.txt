@@ -1,0 +1,6 @@
+工具有:
+tcp调试助手(windows系统)
+串口调试助手(windows系统)
+python3.9安装包,有windwos32位和64位安装包,有python3.9的苹果MacOS系统安装包
+
+链接: https://pan.baidu.com/s/1t-FzJipBfgbiDtvvSNPmBg?pwd=emfa 提取码: emfa 
